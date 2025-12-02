@@ -1,6 +1,6 @@
 function getPoemById(id)
 {
- fetch("/poems/"+id+".html")
+ fetch("https://github.com/anisiceiu/my-poems/poems/"+id+".html")
   .then(response => response.text())
   .then(html => {
       document.getElementById("container-poem").innerHTML = html;
